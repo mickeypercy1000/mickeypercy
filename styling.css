@@ -87,15 +87,6 @@ color: #9e1030ff!important;
     padding-right: 300px;
     text-align: justify
 }
-.aboutusright img{
-    height: 400px;
-    width: 500px;
-    margin-left: -250px;
-    padding-top: 50px;
-    padding-bottom: 40px;
-    min-height: 200px;
-    min-width: 370px;
-}
 /*----Products Section-----*/
 .products{
     background: #12222d;
