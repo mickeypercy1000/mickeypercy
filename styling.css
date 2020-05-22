@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 /*--NavigationBar--*/
 #nav-bar{
@@ -50,51 +49,52 @@ color: #9e1030ff!important;
     font-weight: 600;
 }
 .slider{
-    width: 2400px;
-    height: 600px;
+    width: 100%;
+    height: 500px;
 }
 /*---About Us-----*/
-.container{
-    height: 550px;
-    width: 100%;
-    flex-basis: 30%;
+.aboutusbox{
+    background: rgb(67, 212, 248);
+    display: flex;
+    min-height: 450px;
+    max-height: 2500px;
+
 }
-.contentleft{
-    flex-basis: 0%;
+.aboutusleft{
+    flex-basis: 70%;
+    padding: 40px 60;
     background-color: #fff;
-    height: 500px;
-    width: 70%;
-    padding-right: 150px;
+    
 }
-.aboutheading{
-    padding-left: 60px;
-    padding-top: 40px;
-    color: #555;
-}
-.aboutparagraph{
-    color: #555;
-    font-weight: 60;
-    text-align: justify;
-    font-size: 20px;
-    padding-left: 60px;
-    padding-right: 150px;
-    margin-top: 10px;
-}
-.contentleft button{
-    margin-left: 60px;
-}
-contentleft button{
-    margin-left: 60px;
-}
-.contentbox{
-    background-color: #9e1030ff;
-}
-.contentleft .aboutimage{
-    height: 250px;
-    width: 150px;
-    padding-right: -30px;
-    background-color: aqua;
+.aboutusright{
     flex-basis: 30%;
+    padding: 40px;
+    background-color: #9e1030;
+    min-height: 450px;
+    max-height: 2500px;
+
+}
+.aboutusleft .aboutheader{
+    color: #555;
+    font-size: 40px;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+.aboutusleft .aboutparagraph{
+    font-size: 18px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-right: 300px;
+    text-align: justify
+}
+.aboutusright img{
+    height: 400px;
+    width: 500px;
+    margin-left: -250px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    min-height: 200px;
+    min-width: 370px;
 }
 /*----Products Section-----*/
 .products{
@@ -111,8 +111,7 @@ contentleft button{
     margin-top: 60px;
 }
 .products .container3 .Productbox{
-    position: relative;
-    
+    position: relative; 
     width: 350px;
     height: 350px;
     display: flex;
@@ -124,7 +123,7 @@ contentleft button{
 }
 .heading{
     color: #fff;
-    padding-top:20px;
+    padding-top: 20px;
     padding-bottom: 30px;
     padding-left: 20px;
     font-size: 50px;
@@ -151,16 +150,73 @@ contentleft button{
     font-size: 20px;
 }
 
+/*---Our Clients-----*/
+.clients{
+    background-color: rgba(35, 145, 145, 0.555);
+    padding: 70px;
+    text-align: center;
+}
+.clients .imagebox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.clients .imagebox img{
+    max-width: 200px;
+    margin: 20px;
+    opacity: 0.25;
+    cursor: pointer;
+}
+.clients .imagebox img:hover{
+    opacity: 1;
+}
+.heading{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.text{
+    font-size: 20px;
+}
+/*---Testimonials----*/
+.testimonials{
+    padding: 80px;
+    text-align: center;
+    min-height: 500px;
+    max-height: 2500px;
+    color: #9e1030;
+    background: linear-gradient(-50deg, rgb(184, 157, 157), #9e1030, rgb(58, 49, 49));
+}
+.testimonials .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    
+}
+.testimonials .container .contentbox{
+    background: #fff;
+    padding: 60px 50px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
 /*---contact Section----*/
 #contact{
     background: #efefef;
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 40px;
     color: #777;
 }
 .contact-form{
     padding: 10px;
-    margin-left: 40px;
+    margin-left: 30px;
     margin-top: 5px;
 }
 .form-control{
@@ -185,12 +241,13 @@ contentleft button{
 .contactparagraph{
     color: #555;
     font-size: 30px;
-    padding-left: 50px;
+    padding-left: 40px;
 }
 .follow{
     background: #fff;
     padding: 10px;
     margin: 15px;
+    padding-right: 40px;
 }
 .footersection{
     background: #333;
@@ -200,4 +257,6 @@ contentleft button{
 
 .footerparagraph{
     font-size: 20px;
+    padding-bottom: 5px;
+    padding-top: 10px;
 }
